@@ -1,0 +1,325 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background_login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.gifer.com/origin/9b/9bac74a31ea5676f97c4e79888756148.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* form chat */
+.background_login .login_Wrapper .login_heading .form_chat {
+  position: relative;
+  width: 300px;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(174, 169, 169);
+  border-radius: 10px;
+  font-weight: bold;
+  background: #1c1c1c;
+  overflow: hidden;
+}
+.background_login .login_Wrapper .login_heading .form_chat::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 295px;
+  height: 245px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, red, red);
+  animation: animate 6s linear infinite;
+}
+.background_login .login_Wrapper .login_heading .form_chat::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 295px;
+  height: 245px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, red, #45f3ff);
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.background_login .login_Wrapper .form_chat .chat_login {
+  position: absolute;
+  inset: 2px;
+  background: #28292d;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+/* form ngoai */
+.background_login .login_Wrapper {
+  position: relative;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #28292d;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 7px 9px whitesmoke;
+}
+
+.background_login .login_Wrapper::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 410px;
+  height: 530px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  animation: animate 6s linear infinite;
+}
+.background_login .login_Wrapper::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 410px;
+  height: 530px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.background_login .login_Wrapper .login_heading {
+  position: relative;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.background_login .login_heading {
+  position: absolute;
+  inset: 2px;
+  background: #28292d;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.background_login img {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+/* style input va co chu trong input */
+.form_chat .chat_login .email_login {
+    width: 260px;
+    position: relative;
+    height: 38px;
+    background: transparent;
+    padding: 17px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    margin-top: 32px;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    border-radius: 5px;
+}
+.account span {
+  position: absolute;
+  left: 20px;
+  top: 5vh;
+  padding: 10px 10px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.form_chat .chat_login .password_login {
+    width: 260px;
+    position: relative;
+    height: 38px;
+    background: transparent;
+    padding: 17px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    margin-top: 44px;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    border-radius: 5px;
+}
+.password span {
+  position: absolute;
+  left: 20px;
+  top: 12vh;
+  padding: 15px 10px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+/* style the input */
+.account input:valid ~ span,
+.account input:focus ~ span {
+  color: #45f3ff;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.85em;
+}
+.password input:valid ~ span,
+.password input:focus ~ span {
+  color: #45f3ff;
+  transform: translateY(-34px);
+  font-size: 0.85em;
+}
+.account i {
+  position: absolute;
+  left: 0;
+  bottom: 25vh;
+  width: 88%;
+  margin-left: 20px;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+.password i {
+  position: absolute;
+  left: 0;
+  bottom: 16vh;
+  width: 88%;
+  margin-left: 20px;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+.form_chat .chat_login .btn_login .btn {
+  width: 100%;
+  height: 35px;
+  margin-top: 5vh;
+  border-radius: 3px;
+  border: 1px solid rgb(155, 153, 153);
+  background-color: #45f3ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login_Wrapper .create_question .btn_create {
+  width: 295px;
+  height: 45px;
+  background-color: #45f3ff;
+  margin: 20px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(155, 153, 153);
+  cursor: pointer;
+}
+.login_Wrapper .forgotpass .btn_forgot {
+  position: relative;
+  margin-left: 9vh;
+  margin-bottom: 3vh;
+  outline: none;
+  background-color: #28292d;
+  color: #45f3ff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.background_login .login_Wrapper h2 {
+  color: #45f3ff;
+}
+
+.account input:valid ~ i,
+.account input:focus ~ i {
+  height: 37px;
+}
+.password input:valid ~ i,
+.password input:focus ~ i {
+  height: 37px;
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 10vh;
+  top: 10vh;
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid black; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#loading12345{
+  display: none;
+}
+
+#erros_email{
+  margin-top: 10px;
+}
+

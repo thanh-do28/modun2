@@ -1,0 +1,492 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body_style {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.gifer.com/origin/9b/9bac74a31ea5676f97c4e79888756148.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* style form div ngoai */
+.form_chat_regis .chat_create_account .create_firstname {
+  height: 70px;
+}
+.form_chat_regis .chat_create_account .create_latstname {
+  height: 70px;
+}
+.form_chat_regis .chat_create_account .create_email {
+  height: 70px;
+}
+.form_chat_regis .chat_create_account .create_password {
+  height: 70px;
+}
+.form_chat_regis .chat_create_account .password_confirm {
+  height: 70px;
+}
+
+.body_style .create_Wrapper {
+  position: relative;
+  width: 480px;
+  height: 78%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 7px 9px whitesmoke;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1c1c1c;
+}
+.create_Wrapper::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 410px;
+  height: 730px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  animation: animate 8s linear infinite;
+}
+.create_Wrapper::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 410px;
+  height: 730px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  animation: animate 8s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.body_style .heading_wrapper {
+  position: absolute;
+  inset: 2.5px;
+  background: #28292d;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.body_style .create_Wrapper .heading_wrapper .form_chat_regis {
+  position: relative;
+  width: 88%;
+  margin: -4px 25px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(174, 169, 169);
+  border-radius: 10px;
+  font-weight: bold;
+  background: #1c1c1c;
+  overflow: hidden;
+}
+/* style div trong */
+.form_chat_regis::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 350px;
+  height: 420px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  animation: animate 3s linear infinite;
+}
+.form_chat_regis::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 350px;
+  height: 420px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  animation: animate 4s linear infinite;
+  animation-delay: -3s;
+}
+.body_style .chat_create_account {
+  position: absolute;
+  inset: 2px;
+  background: #28292d;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  padding-top: 38px;
+}
+.body_style img {
+  position: relative;
+  top: 4vh;
+  left: 17vh;
+  width: 200px;
+  height: 50px;
+}
+
+.body_style .form_chat_regis .chat_create_account p {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+/* tao form input  */
+.form_chat_regis .chat_create_account .firstname_create {
+  width: 100%;
+  position: relative;
+  height: 38px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding: 12px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+  border-radius: 4px;
+}
+.create_firstname span {
+  position: absolute;
+  left: 20px;
+  padding: 28px 10px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+/* forcus cho input khi bam se chuyen mau chu */
+.create_firstname input:valid ~ span,
+.create_firstname input:focus ~ span {
+  color: #45f3ff;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.85em;
+}
+/* ke vien  */
+.create_firstname i {
+  position: absolute;
+  left: 0;
+  bottom: 39.5vh;
+  width: 90%;
+  margin-left: 20px;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+/* hover cho hien len input la mau xanh */
+
+.create_firstname input:valid ~ i,
+.create_firstname input:focus ~ i {
+  height: 37px;
+}
+.body_style
+  .form_chat_regis
+  .chat_create_account
+  .create_latstname
+  .lastname_create {
+  width: 100%;
+  height: 41px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+  position: relative;
+  background: transparent;
+  padding: 12px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+  border-radius: 4px;
+}
+.create_latstname span {
+  position: absolute;
+  left: 20px;
+  padding: 28px 10px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.create_latstname input:valid ~ span,
+.create_latstname input:focus ~ span {
+  color: #45f3ff;
+  transform: translateY(-34px);
+  font-size: 0.85em;
+}
+
+.create_latstname i {
+  position: absolute;
+  left: 0;
+  bottom: 32.3vh;
+  width: 90%;
+  margin-left: 20px;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+/* hover cho hien len input la mau xanh */
+
+.create_latstname input:valid ~ i,
+.create_latstname input:focus ~ i {
+  height: 37px;
+}
+.body_style .form_chat_regis .chat_create_account .create_email .email_create {
+  width: 100%;
+  height: 41px;
+  margin-bottom: 12px;
+  position: relative;
+  background: transparent;
+  margin-top: 15px;
+  padding: 12px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+  border-radius: 4px;
+}
+.create_email span {
+  position: absolute;
+  left: 20px;
+  padding: 28px 10px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.create_email input:valid ~ span,
+.create_email input:focus ~ span {
+
+  color: #45f3ff;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.85em;
+}
+.create_email i {
+  position: absolute;
+  left: 0;
+  bottom: 25vh;
+  width: 90%;
+  margin-left: 20px;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+/* hover cho hien len input la mau xanh */
+
+.create_email input:valid ~ i,
+.create_email input:focus ~ i {
+  height: 37px;
+}
+.body_style
+  .form_chat_regis
+  .chat_create_account
+  .create_password
+  .password_create {
+  width: 100%;
+  height: 37px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+  position: relative;
+  background: transparent;
+  padding: 12px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+.create_password span {
+  position: absolute;
+  left: 20px;
+  padding: 28px 10px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.create_password input:valid ~ span,
+.create_password input:focus ~ span {
+  color: #45f3ff;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.85em;
+}
+.create_password i {
+  position: absolute;
+  left: 0;
+  bottom: 18vh;
+  width: 90%;
+  margin-left: 20px;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+/* hover cho hien len input la mau xanh */
+
+.create_password input:valid ~ i,
+.create_password input:focus ~ i {
+  height: 37px;
+}
+.body_style
+  .form_chat_regis
+  .chat_create_account
+  .password_confirm
+  .password_complete {
+  width: 100%;
+  height: 37px;
+  position: relative;
+  background: transparent;
+  padding: 12px;
+  margin-top: 15px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+.password_confirm span {
+  position: absolute;
+  left: 20px;
+  padding: 28px 10px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.password_confirm input:valid ~ span,
+.password_confirm input:focus ~ span {
+  color: #45f3ff;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.85em;
+}
+.password_confirm i {
+  position: absolute;
+  left: 0;
+  bottom: 10.8vh;
+  width: 90%;
+  margin-left: 20px;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+/* hover cho hien len input la mau xanh */
+
+.password_confirm input:valid ~ i,
+.password_confirm input:focus ~ i {
+  height: 37px;
+}
+.body_style .form_chat_regis .btn_create .btn {
+  width: 100%;
+  height: 35px;
+  margin-top: 30px;
+  border-radius: 3px;
+  border: 1px solid rgb(155, 153, 153);
+  background-color: #45f3ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.body_style .create_Wrapper .create_question .btn_question {
+  width: 406px;
+  height: 40px;
+  background-color: #45f3ff;
+  margin: 20px 32px;
+  padding: 11px 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(155, 153, 153);
+  cursor: pointer;
+}
+.body_style .create_Wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
+.body_style h2 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #45f3ff;
+
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25vh;
+  left: 18.5vh;
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid black; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loading12345{
+  display: none;
+}

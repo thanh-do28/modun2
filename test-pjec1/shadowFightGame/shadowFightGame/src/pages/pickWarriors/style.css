@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pick_warriors {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#pick_warriors #container {
+    width: 1024px;
+    padding: 10px;
+}
+#pick_warriors #container .backgroud img {
+    width: 1024px;
+    height: 700px;
+    position:absolute;
+}
+#pick_warriors .text {
+    width: 150px;
+    height: 50px;
+    color: red;
+    border: 5px solid rgb(54, 82, 203);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+#pick_warriors .form {
+    margin: 20px;
+    position: relative;
+}
+#pick_warriors .box {
+    width: 110px;
+}
+#pick_warriors .box img {
+    width: 110px;
+    height:110px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#pick_warriors .box img:hover{
+    filter:brightness(0.95)
+}
+#pick_warriors .users      {
+   display: flex; 
+}
+#pick_warriors .player img {
+    width: 300px;
+    margin: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+#pick_warriors .player01 {
+    position: absolute;
+    top: 30%;
+    left: 75%;
+}
+#pick_warriors .player02 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
